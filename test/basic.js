@@ -27,7 +27,7 @@ describe("testing javascript in the browser", function() {
     return this.browser.quit();
   });
 
-/*  it("should handle clicking on a headline", function(done) {
+  it("should handle clicking on a headline", function(done) {
     var headline = this.browser.findElement(webdriver.By.css('h1'));
 
     headline.click();
@@ -36,5 +36,5 @@ describe("testing javascript in the browser", function() {
       assert.equal(txt, "awesome");
       done();
     });
-  });*/
+  });
 });

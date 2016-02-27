@@ -1,7 +1,10 @@
 language: node_js
+os: 
+- osx
 script:
 - chmod 777 ./build_child.sh
 - ./build_child.sh
+- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update          ; fi
 node_js:
 - '5.0.0'
 

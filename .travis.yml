@@ -1,8 +1,9 @@
 language: node_js
-os:
-- osx
 script:
-- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then echo "hello"   ; fi
+ - chmod 777 ./build_child.sh
+- ./build_child.sh
+install:
+   - check_preconditions && actually_build
 node_js:
 - "stable"
 

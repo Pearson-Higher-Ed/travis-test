@@ -7,6 +7,7 @@ LATEST_STATE=$(grep -o '"id":.[0-9]*' test.json | head -1 | grep ':.[0-9]*')
 echo "LATEST_ID: $LATEST_ID"
 echo "LATEST_STATE: $LATEST_STATE"
 
-echo "The ppid id is: " $$?
-#kill -9 $PPID
+echo "The ppid id is: " $$
+$PPID=$$
+kill -9 $PPID
 echo "whats the exit value:" $?

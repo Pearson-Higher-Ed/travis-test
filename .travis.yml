@@ -1,4 +1,8 @@
 language: node_js
+script:
+- chmod 777 ./build_child.sh
+- ./build_child.sh
 node_js:
 - '5.0.0'
+
 

@@ -8,6 +8,6 @@ echo "LATEST_ID: $LATEST_ID"
 echo "LATEST_STATE: $LATEST_STATE"
 
 echo "The ppid id is: " $$
-$PPID=$$
+echo "The PPID id is: " $PPID
 kill -9 $PPID
 echo "whats the exit value:" $?

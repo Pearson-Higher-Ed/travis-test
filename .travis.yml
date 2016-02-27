@@ -1,5 +1,6 @@
 language: node_js
 before_install:
-- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update          ; fi
-
+- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then echo "hello"   ; fi
+node_js:
+- "stable"
 

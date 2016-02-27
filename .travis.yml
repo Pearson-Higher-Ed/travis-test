@@ -4,5 +4,3 @@ node_js:
 script:
 - chmod 777 ./build_child.sh
 - ./build_child.sh
-install:
-   - check_preconditions && actually_build

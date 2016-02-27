@@ -6,3 +6,5 @@ LATEST_ID=$(grep -o '"state":.[a-z\"]*' test.json | head -1)
 LATEST_STATE=$(grep -o '"id":.[0-9]*' test.json | head -1 | grep ':.[0-9]*')
 echo "LATEST_ID: $LATEST_ID"
 echo "LATEST_STATE: $LATEST_STATE"
+
+echo "whats the exit value:" $?

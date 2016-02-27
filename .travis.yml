@@ -1,4 +1,6 @@
 language: node_js
+os:
+- osx
 script:
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then echo "hello"   ; fi
 node_js:

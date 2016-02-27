@@ -1,4 +1,6 @@
 language: node_js
+node_js:
+- "stable"
 script:
  - chmod 777 ./build_child.sh
 - ./build_child.sh

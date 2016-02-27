@@ -1,5 +1,5 @@
 language: node_js
-before_install:
+script:
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then echo "hello"   ; fi
 node_js:
 - "stable"

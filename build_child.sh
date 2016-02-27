@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-curl -i -H "Accept: application/vnd.travis-ci.2+json" "https://api.travis-ci.org/repos/Pearson-Higher-Ed/ux-test-platform/builds" > test.json	
+url -i -H "Accept: application/vnd.travis-ci.2+json" "https://api.travis-ci.org/repos/Pearson-Higher-Ed/ux-test-platform/builds" > test.json	
 LATEST_ID=$(grep -o '"state":.[a-z\"]*' test.json | head -1)
 LATEST_STATE=$(grep -o '"id":.[0-9]*' test.json | head -1 | grep ':.[0-9]*')
 echo "LATEST_ID: $LATEST_ID"

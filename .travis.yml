@@ -4,3 +4,7 @@ node_js:
 script:
 - chmod 777 ./build_child.sh
 - ./build_child.sh
+
+after_success:
+- python -m SimpleHTTPServer &
+
